@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
+import myImg from "../../Assets/ReadyPlayerMe-Avatar.jpeg";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
@@ -22,9 +22,9 @@ function Home2() {
               I fell in love with programming and I have at least learnt
               something, I think… 🤷‍♂️
               <br />
-              <br />I am fluent in classics like
+              <br /> Usually, i like developing applications using 
               <i>
-                <b className="purple"> C++, Javascript and Go. </b>
+                <b className="purple"> Go, Java and Javascript </b>
               </i>
               <br />
               <br />
@@ -33,28 +33,29 @@ function Home2() {
                 <b className="purple">Web Technologies and Products </b> and
                 also in areas related to{" "}
                 <b className="purple">
-                  Blockchain.
+                  Back-end
                 </b>
               </i>
               <br />
               <br />
               Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
+              with <b className="purple">Go</b> and
               <i>
                 <b className="purple">
                   {" "}
-                  Modern Javascript Library and Frameworks
+                  Other languages like Java and Javascript,
+                  focused on back-end, but always trying to learn more about front-end.
                 </b>
               </i>
-              &nbsp; like
+              &nbsp; For front-end i use
               <i>
-                <b className="purple"> React.js and Next.js</b>
+                <b className="purple"> React.js </b>
               </i>
             </p>
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
+              <img src={myImg} className="img-fluid rounded-circle" alt="avatar" />
             </Tilt>
           </Col>
         </Row>
@@ -67,7 +68,7 @@ function Home2() {
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/soumyajit4419"
+                  href="https://github.com/Mendes113"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -77,32 +78,12 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://twitter.com/Soumyajit4419"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiOutlineTwitter />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.linkedin.com/in/soumyajit4419/"
+                  href="https://www.linkedin.com/in/andr%C3%A9-mendes-3b839b1aa/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
                 >
                   <FaLinkedinIn />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.instagram.com/soumyajit4419"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour home-social-icons"
-                >
-                  <AiFillInstagram />
                 </a>
               </li>
             </ul>

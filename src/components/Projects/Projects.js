@@ -2,13 +2,12 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
-
+import lsr from "../../Assets/Projects/lsr.svg";
+import shop from "../../Assets/Projects/shop.png";
+import thoth from "../../Assets/Projects/logo (1).png";
+import vet from "../../Assets/Projects/veterinary-doctor-examining-a-dog-free-vector.jpg";
+import mail from "../../Assets/Projects/mail.png";
+import pageNasa from "../../Assets/Projects/pageNasa.png";
 function Projects() {
   return (
     <Container fluid className="project-section">
@@ -23,49 +22,57 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={vet}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="Vetsys"
+              description="Full api for managing a veterinary, managing vets, animals, medications, consultations and hospitalizations"
+              ghLink="https://github.com/Mendes113/vetblock"
+             
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={mail}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="Mail-sender-poem"
+              description="Application that sends a poem to a list of emails. The app scrapes a poem from a website and sends it to a list of emails."
+              ghLink="https://github.com/Mendes113/mailsenderPoem"
+             
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={thoth}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="Thoth"
+              description="Thoth is a powerful tool to support collaborative systematic reviews. Developed as a multi-platform solution, aims to automate important parts of the systematic review process, facilitating and streamlining the work of researchers and professionals involved in this type of study."
+              ghLink="https://github.com/Thoth2023"
+              demoLink="https://thoth-slr.com/"              
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={lsr}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="LSR"
+              description="lsr is a simple command-line tool written in Rust for listing and exploring files in a directory. It allows you to list all files or filter them by type, and optionally sort them by size."
+              ghLink="https://github.com/Mendes113/lsr"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={pageNasa}
+              isBlog={false}
+              title="Today Nasa"
+              description="Today Nasa is web application that shows the Astronomy Picture of the Day (APOD) from NASA, and also Rover Photos from Mars. There is algo a telegram bot that sends the APOD to the user."
+              ghLink="https://mendes113.github.io/todayNasa/"
             />
           </Col>
 
-          <Col md={4} className="project-card">
+          {/* <Col md={4} className="project-card">
             <ProjectCard
               imgPath={suicide}
               isBlog={false}
@@ -74,16 +81,15 @@ function Projects() {
               ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
               // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
             />
-          </Col>
+          </Col> */}
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={emotion}
+              imgPath={shop}
               isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
+              title="Price Checker"
+              description="Receive notifications about a product you're looking for. This app scrapes Amazon for the product and notifies you about price drops"
+              ghLink="https://github.com/Mendes113/priceChecker"
               // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
             />
           </Col>

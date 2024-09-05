@@ -25,8 +25,13 @@ function App() {
       upadateLoad(false);
     }, 1200);
 
+    
     return () => clearTimeout(timer);
   }, []);
+
+  useEffect(() => {
+    document.title = "Andre Portfolio";
+  } , []);
 
   return (
     <Router>
