@@ -1,0 +1,25 @@
+/* Geral */
+.navbar {
+    transition: background-color 0.3s;
+  }
+  
+  .navbar.sticky {
+    background-color: #333; /* Altere a cor conforme necessário */
+  }
+  
+  /* Navbar para dispositivos móveis */
+  @media (max-width: 767px) {
+    .navbar .navbar-collapse {
+      text-align: center;
+    }
+  
+    .navbar .nav-link {
+      padding: 10px 0;
+    }
+  
+    .navbar .fork-btn-inner {
+      display: block;
+      margin: 10px auto;
+    }
+  }
+  
