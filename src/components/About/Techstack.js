@@ -10,6 +10,7 @@ import {
   DiJava,
   DiDocker,
   DiRust,
+  
 } from "react-icons/di";
 import {
   SiFirebase,
@@ -17,7 +18,7 @@ import {
   SiPostgresql,
   SiDocker,
   SiApachekafka,
-
+  SiTypescript
 } from "react-icons/si";
 import { TbBrandGolang } from "react-icons/tb";
 
@@ -64,6 +65,9 @@ function Techstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiJava />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiTypescript />
       </Col>
     </Row>
   );
